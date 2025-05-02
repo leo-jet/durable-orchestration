@@ -1,0 +1,19 @@
+# filepath: c:\Users\emman\OneDrive\Documents\durable-orchestration\pyproject.toml
+[tool.poetry]
+name = "durable-orchestration"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+# Include your function folders as packages
+packages = [
+    { include = "durable_client" },
+    { include = "orchestrator" },
+    { include = "hello_activity" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+azure-functions = "*"
+azure-functions-durable = "*"
+
